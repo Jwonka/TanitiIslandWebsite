@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Schedule a Visit - Taniti Island</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Book a Trip</h1>
+        <ul>
+          <li>
+            <img src="images/TanitiIslandIcon.png" alt="Taniti Island Icon" class="icon"/>
+          </li>
+          <li>
+            <a href="index.html" class="centeredIcons"><i class="bi bi-house-fill largeIcons"></i><br>Home</a>
+          </li>
+          <li>
+            <a href="bookATrip.html" class="centeredIcons"><i class="bi bi-luggage-fill largeIcons"></i><br>Book a Trip</a>
+          </li>
+          <li>
+            <a href="contact.html" class="centeredIcons"><i class="bi bi-envelope-fill largeIcons"></i><br>Contact Us</a>
+          </li>
+        </ul>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="transportation.html">Transportation</a>
+            <ul>
+              <li><a href="transportation.html#air">Air Transport</a></li>
+              <li><a href="transportation.html#water">Water Transport</a></li>
+              <li><a href="transportation.html#ground">Ground Transport</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="touristInfo.html">Tourist Info</a>
+            <ul>
+              <li><a href="touristInfo.html#entertainment">Entertainment</a></li>
+              <li><a href="touristInfo.html#sightseeing">Sightseeing</a></li>
+              <li><a href="touristInfo.html#accomodations">Accomodations</a></li>
+              <li><a href="touristInfo.html#islandFacts">Island Facts</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="dining.html">Dining</a>
+            <ul>
+              <li><a href="dining.html#restaurants">Restaurants</a></li>
+              <li><a href="dining.html#grocery">Grocery Stores</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <form autocomplete="on" class="contact">
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <div class="formInput">
+              <label for="fName">First Name:</label>
+              <input type="text" id="fName" name="fName" placeholder="First Name" autocomplete="on" required>
+
+              <label for="lName">Last Name:</label>
+              <input type="text" id="lName" name="lName" placeholder="Last Name" autocomplete="on" required>
+
+              <label for="email" id="emailLabel">Email:</label>
+              <input type="email" id="email" placeholder="Email" autocomplete="on" required>
+
+              <label for="cEmail" id="cEmailLabel">Confirm Email:</label>
+              <input type="email" id="cEmail" placeholder="Confirm Email" autocomplete="on" required>
+
+              <div class="radioButton">
+                <label for="accomodations">Lodging:</label>
+                <ul>
+                  <li>
+                    <input type="radio" id="resort" name="accomodations" value="resort">
+                    <label for="resort">Four-Star Resort</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="hotel" name="accomodations" value="hotel">
+                    <label for="hotel">Hotel</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="bed" name="accomodations" value="bed">
+                    <label for="bed">Bed and breakfast</label>
+                  </li>
+                </ul>
+                <label for="transportation">Transportation:</label>
+                <ul>
+                  <li>
+                    <input type="radio" id="air" name="transportation" value="air">
+                    <label for="air">Air Transport</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="water" name="transportation" value="weter">
+                    <label for="water">Water Transport</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="ground" name="transportation" value="ground">
+                    <label for="ground">Ground Transport</label>
+                  </li>
+                </ul>
+              </div>
+
+              <label for="arrival">Arrival Date</label>
+              <input type="date" id="arrival" name="arrival" value="arrival" style="background-color: white;">
+              
+              <label for="departure">Departure Date</label>
+              <input type="date" id="departure" name="departure" value="departure" style="background-color: white;">
+            </div>
+            <div class="tripButton">
+              <button type="submit" class="button">Submit</button>
+            </div>
+            <div class="bigImage">
+              <div class="imageContainer">
+                <img src="./images/pexels-spencer-passport.jpg" alt="Anonymous tourists showing US passports on street on sunny day.">
+                <div class="caption">
+                  <span>
+                    Photo by <a href="https://www.pexels.com/@spencer/" target="_blank">Spencer Davis</a> on <a href="https://www.pexels.com/photo/anonymous-tourists-showing-us-passports-on-street-on-sunny-day-4353813/" target="_blank">Pexels.com</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+      <footer>
+        <ul>
+          <li>
+            <img src="images/TanitiIslandIcon.png" alt="Taniti Island Icon" class="icon"/>
+          </li>
+          <li>
+            <a href="index.html" class="centeredIcons"><i class="bi bi-house-fill largeIcons"></i><br>Home</a>
+          </li>
+          <li>
+            <a href="bookATrip.html" class="centeredIcons"><i class="bi bi-luggage-fill largeIcons"></i><br>Book a Trip</a>
+          </li>
+          <li>
+            <a href="contact.html" class="centeredIcons"><i class="bi bi-envelope-fill largeIcons"></i><br>Contact Us</a><br>
+          </li>
+        </ul>
+        <p>&copy; 2024 Tanitian Government. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="./js/taniti.js"></script>
+  </body>
+</html>
