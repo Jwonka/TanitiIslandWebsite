@@ -57,7 +57,7 @@ margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 header ul {
@@ -92,7 +92,7 @@ nav li {
 }
 
 nav ul li a {
-  font-size: clamp(0.9rem, 3.5vw, 3rem);
+  font-size: clamp(0.9rem, 3vw, 2.5rem);
 }
 
 nav li ul {
@@ -124,7 +124,7 @@ nav li:hover ul li {
 }
 
 .content {
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
 }
 
 .content p, .content ul {
@@ -161,7 +161,7 @@ nav li:hover ul li {
   border-radius: 0.25vw;
   border: 0.09vw black solid;
   padding: 0.2vw;
-  font-size: clamp(0.65rem, 2.5vw, 2rem);
+  font-size: clamp(0.65rem, 1.5vw, 1rem);
   font-style: italic;
   z-index: 0;
 }
@@ -177,7 +177,7 @@ nav li:hover ul li {
   border: 0.08vw black solid;
   border-radius: 0.25vw;
   object-fit: contain;
-  width: 100%;
+  width: 90%;
   height: auto;
   max-width: 100%;
   z-index: 0;
@@ -191,7 +191,7 @@ span {
 
 span a {
   text-decoration: none;
-  font-size: clamp(0.65rem, 2.5vw, 2rem);
+  font-size: clamp(0.65rem, 1.5vw, 1rem);
   font-style: normal;
   color: green;
 }
@@ -240,7 +240,7 @@ form.contact fieldset {
 }
 
 form.contact legend {
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.4rem);
   border: 0.08vw black solid;
   border-radius: 0.25vw;
   background-color: white;
@@ -265,20 +265,19 @@ form.contact input:valid {
 form.contact label, form.contact input, form.contact textarea {
   margin: 0;
   padding: 0;
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.4rem);
   display: block;
   color: white;
 }
 
 form.contact input, form.contact textarea  {
   color: black;
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
 }
 
 form.contact button, form.contact ::placeholder {
   margin: 0.5vw;
   padding: 0.5vw;
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.4rem);
 }
 
 .formInput label {
@@ -368,16 +367,14 @@ div.gallery {
   align-items: center;
   margin-bottom: 2vw;
   border: 0.2vw solid black;
-  padding: 1vw;
+  padding: 0.5vw;
   background-color: antiquewhite;
-  opacity: 0.8;
-}
-.gallery img {
-  width: 100%;
+  opacity: 0.7;
+  width: auto;
+  max-width: 450px;
   height: auto;
-  object-fit: cover;
-  border-bottom: 2px solid antiquewhite;
 }
+
 div.gallery a {
   z-index: 3;
 }
@@ -389,9 +386,11 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
+  height: auto;
   aspect-ratio: 640 / 428;
   object-fit: cover;
   margin-bottom: -1vw;
+  border-bottom: 2px solid antiquewhite;
 }
 
 div.desc {
@@ -400,13 +399,13 @@ div.desc {
   text-align: center;
   background-color: antiquewhite;
   color: black;
-  font-size: clamp(0.65rem, 2.2vw, 1.7rem);
+  font-size: clamp(0.65rem, 1.8vw, 1.3rem);
   font-style: italic;
 }
 
 div.desc a {
   text-decoration: none;
-  font-size: clamp(0.65rem, 2.2vw, 1.7rem);
+  font-size: clamp(0.65rem, 1.8vw, 1.3rem);
   font-style: normal;
   color: green;
 }
@@ -446,7 +445,27 @@ footer p {
   margin-top: 1.5vw;
 }
 
-@media screen and (max-width: 1560px) and (max-height: 1030px) {
+@media screen and (min-width: 250px) and (max-width: 580px) {
+
+  div.gallery {
+    width: auto;
+    height: 80%;
+    max-height: 190px;
+    padding: 0.5vw;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: 60%;
+    max-height: 170px;
+    object-fit: contain;
+  }
+
+  div.desc {
+    width: 100%;
+    height: 100%;
+    padding: 0.5vw;
+  }
 
   nav ul li a {
     font-size: clamp(1rem, 3.5vw, 3rem);
@@ -476,5 +495,28 @@ footer p {
   .formInput {
     gap: 2vw;
     padding-bottom: 2vw;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 1560px) {
+
+  div.gallery {
+    width: 90%; 
+    max-width: 425px;  
+    padding: 0.5vw;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 375px;
+    object-fit: contain;
+  }
+
+  div.desc {
+    width: 100%; 
+    padding: 0.5vw;
   }
 }
