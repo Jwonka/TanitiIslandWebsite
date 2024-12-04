@@ -41,6 +41,11 @@ a:active {
   text-shadow: 0.2vw 0.2vw 0.2vw;
 }
 
+.navMenu:hover {
+  text-shadow: 0.2vw 0.1vw 0.2vw;
+  color: #FFF00F;
+}
+
 header {
   background-color: #FFF00F;
   padding: 0;
